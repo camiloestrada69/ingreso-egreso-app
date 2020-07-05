@@ -1,7 +1,5 @@
 export class Usuario {
-
-
-    constructor(uid: string, nombre: string, password: string) {
-
-    }
+    uid: string;
+    nombre: string;
+    email: string;
 }
