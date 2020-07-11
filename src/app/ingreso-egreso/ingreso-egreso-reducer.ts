@@ -16,7 +16,7 @@ export const initialState: State = {
 };
 
 
-const _ingresoEgresoReducer = createReducer(initialState,
+const IngresoEgresoReducer = createReducer(initialState,
 
     on(ingresoEgresoActions.setItems, (state, {items}) => ({ ...state, items: [...items] })),
     on(ingresoEgresoActions.unSetItems, state => ({ ...state, items: [] })),
@@ -24,5 +24,5 @@ const _ingresoEgresoReducer = createReducer(initialState,
 );
 
 export function ingresoEgresoReducer(state, action) {
-    return _ingresoEgresoReducer(state, action);
+    return IngresoEgresoReducer(state, action);
 }
